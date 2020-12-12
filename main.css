@@ -1,0 +1,190 @@
+body {
+  background-color: #9fbac2;
+}
+h3 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+p {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+}
+.factory-heading {
+  font-family: 'Courier New', Courier, monospace;
+  color:  #05339e;
+  text-align: center;
+}
+#roboMK1Name {
+  color: #4287f5;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+.jumbotron {
+  background-color: #77b9bd;
+}
+.jumbotron h1 {
+  font-size: 32px;
+  font-weight: 800px;
+  color: #09466e;
+}
+.card-img-top {
+  height: 200px;
+  width: 100px;
+  margin: auto;
+}
+.card-body h5 {
+  color: #09466e; 
+}
+.movie img {
+ width: 3em;
+ height: 5em;
+} 
+.list-group-item img {
+  width: 3em;
+  height: 5em;
+}
+#mk1Settings {
+  flex-direction: column;
+}
+#unpacked-factory {
+  position: fixed;
+  top: 230px;
+  width: 600px;
+}
+.acme-opener {
+  position: fixed;
+  top: 300px;
+  left: 300px;
+  height: 150px;
+  width: 200px;
+}
+#factory {
+  width: 600px;
+  Height: 400px;
+}
+#start-machine{
+  height: 100px;
+  width: 100px;
+  color: #b01010;
+  font-weight: bold;
+  background-color: #9fbac2;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  background-image: url("images/galvanised_hopper.png");
+  background-size: 100px;
+}
+.btn-secondary{
+  height: 50px;
+  width: 100px;
+}
+.hidden {
+  display: none;
+}
+.show {
+ display: inline;
+}
+.jumbotron-factory {
+    background-image: url("images/conveyorBkgrnd.png");
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-color: none;
+}
+#closed-box img {
+  width: 50px;
+  height: 75px;
+  position: relative;
+  animation: delivery 1.0s;
+  animation-duration: 5000ms;
+  animation-iteration-count: 1;
+}
+
+@keyframes delivery {
+  0%   {left:20px; top:0px;}
+  10%  {left:20px; top:0px;}
+  50%  {left:300px; top:10px;}
+  75%  {left:370px; top:100px;}
+  100% {left:420px; top:300px; transform:rotate(90deg);}
+}
+
+.ui-draggable
+{
+  width: 50px;
+  height: 75px;
+}
+
+.machine {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  flex-direction: row;
+  order: 1;
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes spin {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+  transform:rotate(360deg);
+    }
+  }
+  
+#btnContainer {
+  position: relative;
+  margin: auto;
+  width: 350px;
+
+}
+  
+#bender {
+  background-size: 75px;
+  background-repeat: no-repeat;
+  background-color: none;
+  color: grey;
+  height: 120px;
+  width: 100px;
+}
+
+#rosie {
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-color: none;
+  color: yellow;
+  height: 120px;
+  width: 120px;
+}
+
+#marvin {
+  background-size: 120px;
+  background-repeat: no-repeat;
+  background-color: none;
+  color: white;
+  height: 120px;
+  width: 120px;
+}
+
+#bender-quote-btn {
+  width: 100px;
+  height: 50px;
+  position: relative;
+  background-color: #990928;
+  animation: stretchy 1.0s;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+}
+
+  @keyframes stretchy {
+    0% {
+      transform: translateX(0) scaleX(1);
+    }
+    50% {
+      transform: translateX(0) scaleX(2);
+    }
+    100% {
+      transform: translateX(100%) scaleX(1);
+    }
+  }
